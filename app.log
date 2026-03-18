@@ -256,3 +256,363 @@
 [INFO] Future result: Task 6 finished using Connection-4
 [INFO] Future result: Task 7 finished using Connection-3
 [INFO] Program finished
+[INFO] Program started
+[INFO] === Collection streaming #1: all doctors ===
+[INFO] Shevchenko Dmytro, Cardiology
+[INFO] Melnyk Iryna, Neurology
+[INFO] === Collection streaming #2: staff sorted by last name ===
+[INFO] Marchenko Olena
+[INFO] Melnyk Iryna
+[INFO] Shevchenko Dmytro
+[INFO] === Collection streaming #3: unique staff roles ===
+[INFO] people.Doctor
+[INFO] people.Nurse
+[INFO] === Collection streaming #4: appointments count by doctor ===
+[INFO] Appointments for Shevchenko: 2
+[INFO] === Collection streaming #5: first appointment by doctor ===
+[INFO] First appointment for Shevchenko: Tue Mar 17 23:57:23 CET 2026
+[INFO] === Collection streaming #6: has operating room ===
+[INFO] Hospital has operating room: true
+[INFO] === Collection streaming #7: lab tests without result ===
+[INFO] Blood Test
+[INFO] MRI
+[INFO] Record demo (Money): inv1 = Money[amount=1500.0, currency=EUR]
+[INFO] Record demo (Money): inv2 = Money[amount=750.0, currency=EUR]
+[INFO] Enum demo (DepartmentType): CARDIOLOGY
+[INFO] Enum demo (RoomType): Surgery can be performed here -> OPERATING
+[INFO] Patients BEFORE merge sort:
+[INFO] Koval Anna, age=30
+[INFO] Bondar Ihor, age=25
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Oleh, age=20
+[INFO] Patients AFTER merge sort:
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Ihor, age=25
+[INFO] Bondar Oleh, age=20
+[INFO] Koval Anna, age=30
+[ERROR] Staff with staffId S-001 not found
+[INFO] Invoice INV-001 paid successfully
+[ERROR] Lab test 'Blood Test' is not ready yet
+[ERROR] model.Insurance policy number is invalid
+[INFO] Enum demo (InsuranceType): PUBLIC does NOT cover 1500.0
+[ERROR] Appointment conflict: doctor already has an appointment in this time slot
+[INFO] Overloading demo executed
+[INFO] === Connection Pool demo ===
+[INFO] Task 1 waiting for connection
+[INFO] Task 2 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 1 got Connection-1 | thread=pool-1-thread-1
+[INFO] Task 2 got Connection-2 | thread=pool-1-thread-2
+[INFO] Task 3 got Connection-3 | thread=pool-1-thread-3
+[INFO] Task 4 waiting for connection
+[INFO] Task 4 got Connection-4 | thread=pool-1-thread-4
+[INFO] Task 5 waiting for connection
+[INFO] Task 6 waiting for connection
+[INFO] Task 5 got Connection-5 | thread=pool-1-thread-5
+[INFO] Task 7 waiting for connection
+[INFO] Task 1 released Connection-1
+[INFO] Task 5 released Connection-5
+[INFO] Task 2 released Connection-2
+[INFO] Task 3 released Connection-3
+[INFO] Task 4 released Connection-4
+[INFO] Task 6 got Connection-3 | thread=pool-1-thread-6
+[INFO] Task 7 got Connection-1 | thread=pool-1-thread-7
+[INFO] Task 7 released Connection-1
+[INFO] Task 6 released Connection-3
+[INFO] All connection pool tasks finished
+[INFO] Future result: Task 1 finished using Connection-1
+[INFO] Future result: Task 2 finished using Connection-2
+[INFO] Future result: Task 3 finished using Connection-3
+[INFO] Future result: Task 4 finished using Connection-4
+[INFO] Future result: Task 5 finished using Connection-5
+[INFO] Future result: Task 6 finished using Connection-3
+[INFO] Future result: Task 7 finished using Connection-1
+[INFO] Program finished
+[INFO] Program started
+[INFO] === Collection streaming #1: all doctors ===
+[INFO] Shevchenko Dmytro, Cardiology
+[INFO] Melnyk Iryna, Neurology
+[INFO] === Collection streaming #2: staff sorted by last name ===
+[INFO] Marchenko Olena
+[INFO] Melnyk Iryna
+[INFO] Shevchenko Dmytro
+[INFO] === Collection streaming #3: unique staff roles ===
+[INFO] people.Doctor
+[INFO] people.Nurse
+[INFO] === Collection streaming #4: appointments count by doctor ===
+[INFO] Appointments for Shevchenko: 2
+[INFO] === Collection streaming #5: first appointment by doctor ===
+[INFO] First appointment for Shevchenko: Wed Mar 18 00:38:51 CET 2026
+[INFO] === Collection streaming #6: has operating room ===
+[INFO] Hospital has operating room: true
+[INFO] === Collection streaming #7: lab tests without result ===
+[INFO] Blood Test
+[INFO] MRI
+[INFO] Record demo (Money): inv1 = Money[amount=1500.0, currency=EUR]
+[INFO] Record demo (Money): inv2 = Money[amount=750.0, currency=EUR]
+[INFO] Enum demo (DepartmentType): CARDIOLOGY
+[INFO] Enum demo (RoomType): Surgery can be performed here -> OPERATING
+[INFO] Patients BEFORE merge sort:
+[INFO] Koval Anna, age=30
+[INFO] Bondar Ihor, age=25
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Oleh, age=20
+[INFO] Patients AFTER merge sort:
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Ihor, age=25
+[INFO] Bondar Oleh, age=20
+[INFO] Koval Anna, age=30
+[ERROR] Staff with staffId S-001 not found
+[INFO] Invoice INV-001 paid successfully
+[ERROR] Lab test 'Blood Test' is not ready yet
+[ERROR] model.Insurance policy number is invalid
+[INFO] Enum demo (InsuranceType): PUBLIC does NOT cover 1500.0
+[ERROR] Appointment conflict: doctor already has an appointment in this time slot
+[INFO] Overloading demo executed
+[INFO] === Connection Pool demo ===
+[INFO] Task 2 waiting for connection
+[INFO] Task 1 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 5 waiting for connection
+[INFO] Task 4 waiting for connection
+[INFO] Task 3 got Connection-3 | thread=pool-1-thread-3
+[INFO] Task 2 got Connection-1 | thread=pool-1-thread-2
+[INFO] Task 1 got Connection-2 | thread=pool-1-thread-1
+[INFO] Task 5 got Connection-4 | thread=pool-1-thread-5
+[INFO] Task 4 got Connection-5 | thread=pool-1-thread-4
+[INFO] Task 6 waiting for connection
+[INFO] Task 7 waiting for connection
+[INFO] Task 3 released Connection-3
+[INFO] Task 4 released Connection-5
+[INFO] Task 1 released Connection-2
+[INFO] Task 6 got Connection-3 | thread=pool-1-thread-6
+[INFO] Task 7 got Connection-2 | thread=pool-1-thread-7
+[INFO] Task 2 released Connection-1
+[INFO] Task 5 released Connection-4
+[INFO] Task 7 released Connection-2
+[INFO] Task 6 released Connection-3
+[INFO] All connection pool tasks finished
+[INFO] Future result: Task 1 finished using Connection-2
+[INFO] Future result: Task 2 finished using Connection-1
+[INFO] Future result: Task 3 finished using Connection-3
+[INFO] Future result: Task 4 finished using Connection-5
+[INFO] Future result: Task 5 finished using Connection-4
+[INFO] Future result: Task 6 finished using Connection-3
+[INFO] Future result: Task 7 finished using Connection-2
+[INFO] Program finished
+[INFO] Program started
+[INFO] === Collection streaming #1: all doctors ===
+[INFO] Shevchenko Dmytro, Cardiology
+[INFO] Melnyk Iryna, Neurology
+[INFO] === Collection streaming #2: staff sorted by last name ===
+[INFO] Marchenko Olena
+[INFO] Melnyk Iryna
+[INFO] Shevchenko Dmytro
+[INFO] === Collection streaming #3: unique staff roles ===
+[INFO] people.Doctor
+[INFO] people.Nurse
+[INFO] === Collection streaming #4: appointments count by doctor ===
+[INFO] Appointments for Shevchenko: 2
+[INFO] === Collection streaming #5: first appointment by doctor ===
+[INFO] First appointment for Shevchenko: Wed Mar 18 00:40:44 CET 2026
+[INFO] === Collection streaming #6: has operating room ===
+[INFO] Hospital has operating room: true
+[INFO] === Collection streaming #7: lab tests without result ===
+[INFO] Blood Test
+[INFO] MRI
+[INFO] Record demo (Money): inv1 = Money[amount=1500.0, currency=EUR]
+[INFO] Record demo (Money): inv2 = Money[amount=750.0, currency=EUR]
+[INFO] Enum demo (DepartmentType): CARDIOLOGY
+[INFO] Enum demo (RoomType): Surgery can be performed here -> OPERATING
+[INFO] Patients BEFORE merge sort:
+[INFO] Koval Anna, age=30
+[INFO] Bondar Ihor, age=25
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Oleh, age=20
+[INFO] Patients AFTER merge sort:
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Ihor, age=25
+[INFO] Bondar Oleh, age=20
+[INFO] Koval Anna, age=30
+[ERROR] Staff with staffId S-001 not found
+[INFO] Invoice INV-001 paid successfully
+[ERROR] Lab test 'Blood Test' is not ready yet
+[ERROR] model.Insurance policy number is invalid
+[INFO] Enum demo (InsuranceType): PUBLIC does NOT cover 1500.0
+[ERROR] Appointment conflict: doctor already has an appointment in this time slot
+[INFO] Overloading demo executed
+[INFO] === Connection Pool demo ===
+[INFO] Task 1 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 2 waiting for connection
+[INFO] Task 4 waiting for connection
+[INFO] Task 5 waiting for connection
+[INFO] Task 6 waiting for connection
+[INFO] Task 2 got Connection-3 | thread=pool-1-thread-2
+[INFO] Task 6 got Connection-5 | thread=pool-1-thread-6
+[INFO] Task 1 got Connection-1 | thread=pool-1-thread-1
+[INFO] Task 4 got Connection-4 | thread=pool-1-thread-4
+[INFO] Task 3 got Connection-2 | thread=pool-1-thread-3
+[INFO] Task 7 waiting for connection
+[INFO] Task 2 released Connection-3
+[INFO] Task 1 released Connection-1
+[INFO] Task 3 released Connection-2
+[INFO] Task 5 got Connection-1 | thread=pool-1-thread-5
+[INFO] Task 7 got Connection-4 | thread=pool-1-thread-7
+[INFO] Task 6 released Connection-5
+[INFO] Task 4 released Connection-4
+[INFO] Task 7 released Connection-4
+[INFO] Task 5 released Connection-1
+[INFO] All connection pool tasks finished
+[INFO] Future result: Task 1 finished using Connection-1
+[INFO] Future result: Task 2 finished using Connection-3
+[INFO] Future result: Task 3 finished using Connection-2
+[INFO] Future result: Task 4 finished using Connection-4
+[INFO] Future result: Task 5 finished using Connection-1
+[INFO] Future result: Task 6 finished using Connection-5
+[INFO] Future result: Task 7 finished using Connection-4
+[INFO] Program finished
+[INFO] Program started
+[INFO] === Collection streaming #1: all doctors ===
+[INFO] Shevchenko Dmytro, Cardiology
+[INFO] Melnyk Iryna, Neurology
+[INFO] === Collection streaming #2: staff sorted by last name ===
+[INFO] Marchenko Olena
+[INFO] Melnyk Iryna
+[INFO] Shevchenko Dmytro
+[INFO] === Collection streaming #3: unique staff roles ===
+[INFO] people.Doctor
+[INFO] people.Nurse
+[INFO] === Collection streaming #4: appointments count by doctor ===
+[INFO] Appointments for Shevchenko: 2
+[INFO] === Collection streaming #5: first appointment by doctor ===
+[INFO] First appointment for Shevchenko: Wed Mar 18 00:57:11 CET 2026
+[INFO] === Collection streaming #6: has operating room ===
+[INFO] Hospital has operating room: true
+[INFO] === Collection streaming #7: lab tests without result ===
+[INFO] Blood Test
+[INFO] MRI
+[INFO] Record demo (Money): inv1 = Money[amount=1500.0, currency=EUR]
+[INFO] Record demo (Money): inv2 = Money[amount=750.0, currency=EUR]
+[INFO] Enum demo (DepartmentType): CARDIOLOGY
+[INFO] Enum demo (RoomType): Surgery can be performed here -> OPERATING
+[INFO] Patients BEFORE merge sort:
+[INFO] Koval Anna, age=30
+[INFO] Bondar Ihor, age=25
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Oleh, age=20
+[INFO] Patients AFTER merge sort:
+[INFO] Andriienko Maria, age=40
+[INFO] Bondar Ihor, age=25
+[INFO] Bondar Oleh, age=20
+[INFO] Koval Anna, age=30
+[ERROR] Staff with staffId S-001 not found
+[INFO] Invoice INV-001 paid successfully
+[ERROR] Lab test 'Blood Test' is not ready yet
+[ERROR] model.Insurance policy number is invalid
+[INFO] Enum demo (InsuranceType): PUBLIC does NOT cover 1500.0
+[ERROR] Appointment conflict: doctor already has an appointment in this time slot
+[INFO] Overloading demo executed
+[INFO] === Connection Pool demo ===
+[INFO] Task 1 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 4 waiting for connection
+[INFO] Task 5 waiting for connection
+[INFO] Task 2 waiting for connection
+[INFO] Task 6 waiting for connection
+[INFO] Task 7 waiting for connection
+[INFO] Task 4 got Connection-3 | thread=pool-1-thread-4
+[INFO] Task 5 got Connection-4 | thread=pool-1-thread-5
+[INFO] Task 1 got Connection-1 | thread=pool-1-thread-1
+[INFO] Task 3 got Connection-2 | thread=pool-1-thread-3
+[INFO] Task 2 got Connection-5 | thread=pool-1-thread-2
+[INFO] Task 2 released Connection-5
+[INFO] Task 3 released Connection-2
+[INFO] Task 7 got Connection-4 | thread=pool-1-thread-7
+[INFO] Task 1 released Connection-1
+[INFO] Task 5 released Connection-4
+[INFO] Task 6 got Connection-2 | thread=pool-1-thread-6
+[INFO] Task 4 released Connection-3
+[INFO] Task 7 released Connection-4
+[INFO] Task 6 released Connection-2
+[INFO] All connection pool tasks finished
+[INFO] Future result: Task 1 finished using Connection-1
+[INFO] Future result: Task 2 finished using Connection-5
+[INFO] Future result: Task 3 finished using Connection-2
+[INFO] Future result: Task 4 finished using Connection-3
+[INFO] Future result: Task 5 finished using Connection-4
+[INFO] Future result: Task 6 finished using Connection-2
+[INFO] Future result: Task 7 finished using Connection-4
+[INFO] Program finished
+[INFO] Program started
+[INFO] === Connection Pool demo ===
+[INFO] Task 1 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 2 waiting for connection
+[INFO] Task 5 waiting for connection
+[INFO] Task 4 waiting for connection
+[INFO] Task 5 got Connection-4
+[INFO] Task 4 got Connection-5
+[INFO] Task 2 got Connection-3
+[INFO] Task 1 got Connection-1
+[INFO] Task 3 got Connection-2
+[INFO] Task 4 released Connection-5
+[INFO] Task 5 released Connection-4
+[INFO] Task 3 released Connection-2
+[INFO] Task 2 released Connection-3
+[INFO] Task 1 released Connection-1
+[INFO] Task 1 finished using Connection-1
+[INFO] Task 2 finished using Connection-3
+[INFO] Task 3 finished using Connection-2
+[INFO] Task 4 finished using Connection-5
+[INFO] Task 5 finished using Connection-4
+[INFO] Text parsing completed. Check output.csv
+[INFO] Program finished
+[INFO] Program started
+[INFO] === Connection Pool demo ===
+[INFO] Task 1 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 5 waiting for connection
+[INFO] Task 2 waiting for connection
+[INFO] Task 4 waiting for connection
+[INFO] Task 1 got Connection-1
+[INFO] Task 4 got Connection-5
+[INFO] Task 5 got Connection-3
+[INFO] Task 2 got Connection-4
+[INFO] Task 3 got Connection-2
+[INFO] Task 3 released Connection-2
+[INFO] Task 2 released Connection-4
+[INFO] Task 4 released Connection-5
+[INFO] Task 5 released Connection-3
+[INFO] Task 1 released Connection-1
+[INFO] Task 1 finished using Connection-1
+[INFO] Task 2 finished using Connection-4
+[INFO] Task 3 finished using Connection-2
+[INFO] Task 4 finished using Connection-5
+[INFO] Task 5 finished using Connection-3
+[INFO] Text parsing completed. Check output.csv
+[INFO] Program finished
+[INFO] Program started
+[INFO] === Connection Pool demo ===
+[INFO] Task 4 waiting for connection
+[INFO] Task 5 waiting for connection
+[INFO] Task 3 waiting for connection
+[INFO] Task 4 got Connection-1
+[INFO] Task 2 waiting for connection
+[INFO] Task 2 got Connection-4
+[INFO] Task 1 waiting for connection
+[INFO] Task 1 got Connection-5
+[INFO] Task 5 got Connection-2
+[INFO] Task 3 got Connection-3
+[INFO] Task 4 released Connection-1
+[INFO] Task 3 released Connection-3
+[INFO] Task 1 released Connection-5
+[INFO] Task 2 released Connection-4
+[INFO] Task 5 released Connection-2
+[INFO] Task 1 finished using Connection-5
+[INFO] Task 2 finished using Connection-4
+[INFO] Task 3 finished using Connection-3
+[INFO] Task 4 finished using Connection-1
+[INFO] Task 5 finished using Connection-2
+[INFO] Text parsing completed. Check output.csv
+[INFO] Program finished
